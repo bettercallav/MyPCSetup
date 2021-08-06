@@ -1,0 +1,40 @@
+Instructions:-
+
+For KMS Activation of Volume Licensed Products-
+
+1. Run KMS-VL-ALL.cmd as Administrator
+2. Done
+
+For VL conversion of Office 2013/2016/2019 C2R ; Here or Here
+
+Defaults:
+ Manual mode/No Auto-renewal Task (_Task=0); For auto-renewal task to be installed change it to _Task=1
+ Offline mode (_OfflineMode=1); For Online mode change it to _OfflineMode=0
+ Non-Debug mode (_Debug=0); For debug mode change it to _Debug=1
+ Custom ePIDs (_RandomLevel=0); For random ePIDs change it to _RandomLevel=1 or 2
+
+Install Auto-Renewal Task:
+ - Open KMS-VL-ALL.cmd in Notepad, change _Task=0 to _Task=1, save and run.
+ - Keep KMS-VL-ALL folder in the same location
+ - Exclude the folder in Anti-Virus software
+
+Troubleshooting:-
+
+Common Cause #1: Error Code: 0x80070005
+ Problem: Access has been denied
+ Solution: Right click on the script and select 'run as Administrator'
+ 
+Common Cause #2:
+ Problem: Anti-virus programs might be blocking SECOPatcher/Hook/vlmcsd files
+ Solution: Add the activation files to exclusion list in your AV OR temporarily disable your AV
+ 
+Common Cause #3: Error Code: 0xC004E015/0x80070002/0xC004D302
+ Problem: Windows 10 Insider edition messing up Office activation
+ Problem: Security Permissions for SECO/vlmcsd files issue
+ Problem: Corrupted License Tokens
+ Solution: Rebuild tokens.dat ; Here or Here
+ELSE:
+ - Open KMS-VL-ALL.cmd in Notepad
+ - Change _Debug=0 to _Debug=1
+ - Run as Admin
+ - Copy Paste the log file contents in CODE tags or upload the log file
